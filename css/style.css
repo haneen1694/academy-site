@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+#page {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 61.75em;      /* 988px / 16px = 61.75em */
+}
+h1 {
+	font-size: 40px;
+	color: darkred;
+}
+body{
+	background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images\background.png);
+    background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.logo img{
+	float: left;
+	width: auto;
+	height: auto;
+	padding-top:0px;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+}
+.navbar {
+	
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: white;
+	background-color: darkred;
+}
+li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: 130px;
+}
+ul {
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	margin: auto;
+}
+ul li a{
+	font-size: 20px;
+	color: white;
+	padding: 8px 40px;
+	display: inline-block;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+	position: relative;
+	
+}
+ul li.active a{
+	color: darkred;
+	background-color: white;
+}
+ul li a:hover {
+	background-color: white;
+	color: darkred;
+}
+
+.text-box {
+	width: 78%;
+}
+
+p.title{
+	font-size: 28px;
+	font-weight: bold;
+	color: darkred;
+	text-align: right;
+}
+p {
+	font-size: 22px;
+	text-align: right;
+	color: white;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: darkred;
+  margin-top: 20px;
+  opacity: 0.5;
+  font-size: 16 px;
+}
+
+@media(max-width: 700px) {
+	.text-box p.title {
+		font-size: 22px;
+	}
+	.text-box p {
+		font-size: 16px;
+	}
+	.navbar {
+		z-index: 2;
+	}
+}

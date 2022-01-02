@@ -1,0 +1,39 @@
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+a {
+	font-size: 30px;
+	font-family: Calibri;
+	color: white;
+	
+}
+header {
+}
+ul li a:hover {
+	background-color: white;
+	color: darkred;
+}
+ul li a:link {
+	text-decoration: none;
+}
+ul {
+	float: right;
+	list-style-type: none;
+	text-align: right;
+}
+ul li a{
+	font-size: 30px;
+	font-family: Calibri;
+	color: white;
+	padding: 8px 40px;
+	display: inline-block;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+	position: relative;
+	
+}
+ul li.active a{
+	color: darkred;
+	background-color: white;
+}

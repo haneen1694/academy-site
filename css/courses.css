@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h1 {
+	font-size: 40px;
+	color: darkred;
+}
+body{
+	 background-color:#b3ccff; 
+	/* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(ka_html_3e773ee056a0679c.gif); */
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	background-position: center;
+}
+.logo img{
+	float: left;
+	width: auto;
+	height: auto;
+	padding-top:0px;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+}
+p.title{
+	font-size: 32px;
+	font-weight: bold;
+	color: darkred;
+	text-align: right;
+	background-color: rgb(255, 255, 255, 0.5);
+	/* width: 190px; */
+	padding: 10px;
+}
+td.title{
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	text-align: right;
+	border: none;
+	background-color: darkred;
+}
+.titlec{
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	border-style: inset;
+	padding: 10px;
+}
+p {
+	font-size: 22px;
+	text-align: right;
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: darkred;
+}
+li a {
+	display: block;
+    width: 130px;
+	text-decoration: none;
+	color: white;
+}
+ul {
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	margin: auto;
+}
+ul li a{
+	font-size: 20px;
+	color: white;
+	padding: 8px 40px;
+	display: inline-block;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+	position: relative;
+	
+}
+ul li.active a{
+	color: darkred;
+	background-color: white;
+}
+ul li a:hover {
+	background-color: white;
+	color: darkred;
+}
+table{
+	border-style: none; 
+	padding: 10px;
+	width: 100%;
+	color: black;
+}
+tr {
+	border-style: inset; 
+	padding: 10px;
+	text-align: right;
+	font-size: 20px;
+}
+td {
+	border-style: inset;	
+	padding: 10px;
+	text-align: right;
+	font-size: 20px;
+}
+.none {
+	border-style: none;	
+	padding: 10px;
+	text-align: right;
+	font-size: 20px;
+}
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: darkred;
+  margin-top: 20px;
+  opacity: 0.5;
+  font-size: 16 px;
+}
+.transparentBackgroundColorMixin(@alpha,@color) {
+  background-color: rgba(red(@color), green(@color), blue(@color), @alpha);
+}
+.textbackground {
+    .transparentBackgroundColorMixin(0.6,#ffffff);
+}
